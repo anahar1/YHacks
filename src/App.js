@@ -1,3 +1,5 @@
+// code referred from https://jord.dev/how-to-build-a-simple-login-system-with-react-firebase
+
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 

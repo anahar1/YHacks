@@ -1,3 +1,5 @@
+// code referred from https://jord.dev/how-to-build-a-simple-login-system-with-react-firebase
+
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
