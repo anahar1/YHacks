@@ -10,7 +10,7 @@ function Navigation() {
     <nav className="navbar bg-base-200 text-base-content">
       <div className="navbar-start">
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          React Firebase Login
+          Connect Campus
         </Link>
       </div>
 
@@ -66,7 +66,7 @@ function Navigation() {
                   : "btn btn-ghost mr-2 hidden lg:flex"
               }
             >
-              Connect With CL
+              Campus Rep
             </NavLink>
             <NavLink
               to="/inbox"

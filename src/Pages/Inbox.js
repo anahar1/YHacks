@@ -16,7 +16,7 @@ function Inbox() {
     <>
       <div className="card justify-center h-60 bg-base-200 m-4">
         <div className="hero-content text-center mx-auto">
-          <h1 className="text-5xl font-bold">Welcome, {user.email}</h1>
+          <h1 className="text-5xl font-bold">Coming Soon!!</h1>
         </div>
       </div>
     </>
