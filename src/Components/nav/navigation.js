@@ -59,16 +59,6 @@ function Navigation() {
               Jobs
             </NavLink>
             <NavLink
-              to="/connect-with-cl"
-              className={({ isActive }) =>
-                isActive
-                  ? "btn btn-ghost btn-active mr-2 hidden lg:flex"
-                  : "btn btn-ghost mr-2 hidden lg:flex"
-              }
-            >
-              Campus Rep
-            </NavLink>
-            <NavLink
               to="/inbox"
               className={({ isActive }) =>
                 isActive

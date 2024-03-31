@@ -18,6 +18,7 @@ function LoginForm() {
     // Perform login based on role
     if (role === "CampusRep") {
       // Perform login logic for Campus Rep
+      navigate("/review-resume");
       console.log("Logging in as Campus Rep...");
     } else if (role === "Employer") {
       // Perform login logic for Employer

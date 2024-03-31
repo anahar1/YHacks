@@ -102,11 +102,43 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #333; /* Change the color to a lighter shade */
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+    background-color: #333; /* Change the color to a darker shade */
+    width: 500px; /* Increase the width */
+    height: 300px; /* Increase the height */
+    border-radius: 20px; /* Add border-radius for curved corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
     z-index: 10; /* Ensure it's above other elements */
+    padding: 20px; /* Add padding for content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+  
+  .black-card h2 {
+    color: white; /* Set text color to white */
+    margin-bottom: 20px; /* Add margin below the heading */
+  }
+  
+  .black-card button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .black-card button:hover {
+    background-color: #45a049;
+  }
+  
+  .black-card button:focus {
+    outline: none;
+  }
+  
   
   .buttons-container {
     position: absolute;
@@ -115,5 +147,44 @@
     transform: translateX(-50%);
     padding: 20px;
     z-index: 20; /* Ensure it's above the black card */
+  }
+  
+  
+  .close-button {
+    background-color: #ff6347; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+  
+  .close-button:hover {
+    background-color: #ff0000; /* Darker red color on hover */
+  }
+  
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 999; /* Ensure the pop-up is on top */
+  }
+  
+  .popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1000; /* Ensure the pop-up content is on top */
+    align-items: center;
   }
   

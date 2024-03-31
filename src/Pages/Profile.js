@@ -38,19 +38,24 @@ function Profile() {
     const fetchEducationData = async () => {
       try {
         const educationData = await getEducationInformation(user.email);
-        const field1 = await getJourneyInformation(user.email);
-        const field3 = await getWorkInformation(user.email);
-        const field4 = await getProjectInformation(user.email);
-
-        setPassion(field1);
-        setWorkExperiences(field3);
-        setProjects(field4);
-        setEducation(educationData);
-        console.log("Education data fetched:", educationData);
+        if (educationData) {
+          const field1 = await getJourneyInformation(user.email);
+          const field3 = await getWorkInformation(user.email);
+          const field4 = await getProjectInformation(user.email);
+    
+          setPassion(field1);
+          setWorkExperiences(field3);
+          setProjects(field4);
+          setEducation(educationData);
+          console.log("Education data fetched:", educationData);
+        } else {
+          console.log("User has no education data");
+        }
       } catch (error) {
         console.error("Error fetching education information:", error);
       }
     };
+    
 
     fetchEducationData();
   }, [user.email]);

@@ -1,0 +1,57 @@
+/* ReviewResume.css */
+
+.review-resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left-card-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tinder-card-container {
+    width: 80%;
+    max-width: 300px; /* Adjust the max-width as needed */
+  }
+  
+  .tinder-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .tinder-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .tinder-card a:hover {
+    color: #555;
+  }
+  
+  .swipe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .close-button1 {
+    background-color: #ff6347; /* Red color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 45px;
+  }

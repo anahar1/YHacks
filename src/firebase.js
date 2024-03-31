@@ -185,6 +185,15 @@ const getProjectInformation = async (userEmail) => {
 };
 
 
+const addCampusEmail = async (email) => {
+  try {
+    await addDoc(collection(db, "campus"), { email });
+    console.log("Email added to campus collection:", email);
+  } catch (error) {
+    console.error("Error adding email to campus collection:", error);
+  }
+};
+
 export {
   auth,
   db,
@@ -193,10 +202,11 @@ export {
   registerWithEmailAndPassword,
   sendPasswordReset,
   logout,
-  addProfileInformation, // Export the function to add project description
+  addProfileInformation,
   getProjectInformation,
   getJourneyInformation,
   getWorkInformation,
   storage,
-  getAllEmployees, // Export the function to retrieve all employees
+  getAllEmployees,
+  addCampusEmail, // Export the addCampusEmail function
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import ReviewResume from "./Pages/ReviewResume"; // Import the new component
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 import Logout from "./Pages/Logout";
@@ -27,7 +28,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/logout" element={<Logout />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/review-resume" element={<ReviewResume />} /> {/* New route */}
+          <Route path="/register" element={<Register />} />
             <Route path="/reset" element={<Reset />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} /> {/* New route */}
