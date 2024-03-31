@@ -25,6 +25,7 @@ function Jobs() {
       const work = await getWorkInformation(user.email);
       const project = await getProjectInformation(user.email);
       const exp = "This is my profile: Work Experience - Job Title is " + work[0].employer + ", Company name is " + work[0].jobTitle + " my Education is in - " + education.major + " my GPA is " + education.gpa + " my school is " + education.schoolName + " my Project description - " + project[0].description + "\nOut of the top individuals, rate my profile out of 10. Also give me tips to improve it in 100 words";
+      console.log(exp)
       const url = `http://localhost:5000/hello?prompt=${encodeURIComponent(exp)}`;
       const response = await fetch(url);
       const data = await response.text();
